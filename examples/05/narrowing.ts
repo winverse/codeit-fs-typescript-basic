@@ -15,9 +15,9 @@ interface ShoeProduct {
 
 function printSize(size: string | number) {
   if (typeof size === "string") {
-    console.log(`의류 사이즈:${size}`);
+    console.log(`의류 사이즈: ${size}`);
   } else {
-    console.log(`신발 사이즈:${size}mm`);
+    console.log(`신발 사이즈: ${size}mm`);
   }
 }
 
@@ -25,19 +25,19 @@ function printProductDetail(product: ClothingProduct | ShoeProduct) {
   console.log(product.name);
 
   if ("color" in product) {
-    console.log(`색상:${product.color}`);
-    console.log(`사이즈:${product.sizes.join(", ")}`);
+    console.log(`색상: ${product.color}`);
+    console.log(`사이즈: ${product.sizes.join(", ")}`);
   } else {
-    console.log(`수제화:${product.handmade}`);
-    console.log(`사이즈:${product.sizes.join(", ")}mm`);
+    console.log(`수제화: ${product.handmade}`);
+    console.log(`사이즈: ${product.sizes.join(", ")}mm`);
   }
 }
 
 function printSelectedSizes(sizes: string | string[]) {
   if (Array.isArray(sizes)) {
-    console.log(`선택 가능한 사이즈:${sizes.join(", ")}`);
+    console.log(`선택 가능한 사이즈: ${sizes.join(", ")}`);
   } else {
-    console.log(`대표 사이즈:${sizes}`);
+    console.log(`대표 사이즈: ${sizes}`);
   }
 }
 

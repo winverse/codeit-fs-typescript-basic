@@ -20,7 +20,7 @@ const product2: Product = {
 };
 
 function printProduct(product: Product): void {
-  console.log(`${product.name}의 가격은${product.price}원입니다.`);
+  console.log(`${product.name}의 가격은 ${product.price}원입니다.`);
 }
 
 printProduct(product1);

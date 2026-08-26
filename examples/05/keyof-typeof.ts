@@ -19,7 +19,7 @@ type ProductProperty = keyof typeof product;
 const productTableKeys: ProductProperty[] = ["name", "price", "membersOnly"];
 
 function printProductValue(item: ProductFromValue, key: ProductProperty) {
-  console.log(`${key} |${item[key]}`);
+  console.log(`${key} | ${item[key]}`);
 }
 
 for (const key of productTableKeys) {

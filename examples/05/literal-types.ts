@@ -6,7 +6,7 @@ let discountRate1 = 10;
 const discountRate2 = 15;
 
 function printSelectedSize(size: "M") {
-  console.log(`선택한 사이즈:${size}`);
+  console.log(`선택한 사이즈: ${size}`);
 }
 
 const selectedSize1 = "M";

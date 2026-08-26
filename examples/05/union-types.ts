@@ -25,12 +25,12 @@ interface ShoeProduct extends Product {
 
 function printProduct(product: ClothingProduct | ShoeProduct) {
   console.log(`${product.name}:${product.price.toLocaleString()}원`);
-  console.log(`구매 가능한 사이즈:${product.sizes.join(", ")}`);
+  console.log(`구매 가능한 사이즈: ${product.sizes.join(", ")}`);
 
   if ("color" in product) {
-    console.log(`색상:${product.color}`);
+    console.log(`색상: ${product.color}`);
   } else {
-    console.log(`수제화 여부:${product.handmade}`);
+    console.log(`수제화 여부: ${product.handmade}`);
   }
 }
 
@@ -59,7 +59,7 @@ type ClothingSizeOption = "S" | "M" | "L" | "XL";
 type ShoeSizeOption = 220 | 230 | 240 | 250 | 260 | 270 | 280;
 
 function selectClothingSize(size: ClothingSizeOption) {
-  console.log(`선택한 의류 사이즈:${size}`);
+  console.log(`선택한 의류 사이즈: ${size}`);
 }
 
 const selectedClothingSize: ClothingSizeOption = "M";

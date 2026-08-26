@@ -10,7 +10,7 @@ const productSize: Size = Size.M;
 console.log(productSize); // 출력: M
 
 function printSize(size: Size): void {
-  console.log(`사이즈:${size}`);
+  console.log(`사이즈: ${size}`);
 }
 
 printSize(Size.L); // 출력: 사이즈: L
@@ -24,7 +24,7 @@ enum Direction {
 }
 
 function move(direction: Direction): void {
-  console.log(`이동 방향:${direction}`);
+  console.log(`이동 방향: ${direction}`);
 }
 
 move(Direction.Up); // 출력: 이동 방향: UP

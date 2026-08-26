@@ -34,7 +34,7 @@ const monster: Monster = {
   skills: ["태권도", "특공무술"],
   move(fromPoint, toPoint) {
     const [dx, dy] = getDiff(fromPoint, toPoint);
-    console.log(`오른쪽으로${dx} 위쪽으로${dy} 만큼 이동!`);
+    console.log(`오른쪽으로 ${dx} 위쪽으로 ${dy} 만큼 이동!`);
   },
   createdAt: new Date(),
   updatedAt: new Date(),
