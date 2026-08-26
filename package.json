@@ -1,0 +1,23 @@
+{
+  "name": "codeit-fs-typescript-basic",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.3.0",
+  "engines": {
+    "node": "26.7.0"
+  },
+  "scripts": {
+    "check": "tsc -p tsconfig.json",
+    "check:configs": "tsc -p examples/08/configs/options/tsconfig.json --noEmit && tsc -p examples/08/configs/extends/tsconfig.json",
+    "check:errors": "node scripts/check-intentional-errors.mjs",
+    "build:configs": "tsc -p examples/08/configs/extends/tsconfig.build.json",
+    "build:modules": "tsc -p examples/08/modules/tsconfig.json",
+    "start:modules": "node examples/08/modules/dist/main.js",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "3.8.1",
+    "typescript": "7.0.2"
+  }
+}

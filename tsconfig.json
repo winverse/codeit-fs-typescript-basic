@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["examples/**/*.ts"],
+  "exclude": ["examples/**/intentional-errors/**", "examples/08/modules/**"]
+}

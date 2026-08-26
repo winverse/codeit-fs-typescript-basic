@@ -1,0 +1,3 @@
+examples/01/expected/
+examples/02/expected/
+examples/**/intentional-errors/
