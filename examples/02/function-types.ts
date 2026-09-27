@@ -5,9 +5,6 @@ const stock: { [id: string]: number } = {
 };
 const cart: string[] = [];
 
-// id: string  → 첫 번째 파라미터는 문자열
-// quantity: number = 1  → 두 번째는 숫자, 기본값은 1
-// : boolean  → 반환값은 불린형
 function addToCart(id: string, quantity: number = 1): boolean {
   if (stock[id] < quantity) {
     return false;

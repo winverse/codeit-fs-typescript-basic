@@ -1,12 +1,12 @@
 // examples/05/intersection-types.ts
-type Id = {
+interface Id {
   id: string;
-};
+}
 
-type Timestamp = {
+interface Timestamp {
   createdAt: Date;
   updatedAt: Date;
-};
+}
 
 type Product = Id & {
   name: string;
