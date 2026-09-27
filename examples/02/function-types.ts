@@ -30,8 +30,11 @@ function printCart(title?: string): void {
   console.log(cart);
 }
 
-printCart();
+printCart(); // 출력: [ 'c001', 'c001', 'c001' ]
 printCart("현재 장바구니");
+// 출력:
+// 현재 장바구니
+// [ 'c001', 'c001', 'c001' ]
 
 function addManyToCart(...ids: string[]): void {
   for (const id of ids) {
