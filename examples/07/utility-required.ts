@@ -7,6 +7,7 @@ interface Config {
 }
 
 type CompleteConfig = Required<Config>;
+// 결과: { host: string; port: number; ssl: boolean; timeout: number }
 
 function initializeConfig(config: Config): CompleteConfig {
   return {
@@ -18,3 +19,4 @@ function initializeConfig(config: Config): CompleteConfig {
 }
 
 console.log(initializeConfig({ port: 4000 }));
+// 출력: { host: 'localhost', port: 4000, ssl: false, timeout: 5000 }

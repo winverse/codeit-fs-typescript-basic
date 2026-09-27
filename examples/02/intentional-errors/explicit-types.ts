@@ -4,4 +4,4 @@ let age: number = 20; // 타입 선언 + 값 할당
 let isLoggedIn: boolean;
 
 username = "codeit"; // OK
-username = 123; // ❌ 오류
+username = 123; // ❌ 오류: number를 string 자리에 넣을 수 없습니다

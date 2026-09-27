@@ -27,9 +27,10 @@ function fail(message: string): never {
 }
 
 console.log(sizeOption, eventSize, preview);
+// 출력: M FREE { name: '코드잇 블랙 후드 집업', price: 129000 }
 
 try {
   fail("never 예시");
 } catch (error) {
-  console.log(error);
+  console.log(error); // 출력: Error: never 예시 (이어서 오류가 발생한 위치가 표시됩니다)
 }

@@ -23,8 +23,8 @@ function printProduct(product: Product): void {
   console.log(`${product.name}의 가격은 ${product.price}원입니다.`);
 }
 
-printProduct(product1);
-printProduct(product2);
+printProduct(product1); // 출력: 코드잇 블랙 후드 집업의 가격은 129000원입니다.
+printProduct(product2); // 출력: 코드잇 텀블러의 가격은 25000원입니다.
 
 interface ClothingProduct extends Product {
   sizes: string[];
@@ -39,4 +39,4 @@ const jacket: ClothingProduct = {
   color: "navy",
 };
 
-printProduct(jacket);
+printProduct(jacket); // 출력: 코드잇 자켓의 가격은 149000원입니다.

@@ -25,6 +25,10 @@ function printProductValue(item: ProductFromValue, key: ProductProperty) {
 for (const key of productTableKeys) {
   printProductValue(product, key);
 }
+// 출력:
+// name | 코드잇 블랙 후드 집업
+// price | 129000
+// membersOnly | true
 
 const product2: typeof product = {
   id: "c002",
@@ -40,3 +44,4 @@ const product3: ProductFromValue = {
 };
 
 console.log(product2, product3);
+// 출력: { id: 'c002', name: '코드잇 텀블러', price: 25000 } { id: 'c003', name: '코드잇 머그컵', price: 19000, membersOnly: false }

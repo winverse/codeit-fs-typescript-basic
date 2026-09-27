@@ -64,5 +64,5 @@ function selectClothingSize(size: ClothingSizeOption) {
 
 const selectedClothingSize: ClothingSizeOption = "M";
 
-selectClothingSize(selectedClothingSize);
-// selectClothingSize('XXL'); // 오류: 허용된 값이 아닙니다
+selectClothingSize(selectedClothingSize); // 출력: 선택한 의류 사이즈: M
+// selectClothingSize('XXL'); // ❌ 오류: 허용된 값이 아닙니다

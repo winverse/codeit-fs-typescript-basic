@@ -20,5 +20,5 @@ const user: User = {
 const userName = getProperty(user, "name");
 const userAge = getProperty(user, "age");
 
-console.log(userName, userAge);
-// getProperty(user, "height"); // ❌ User에 없는 키입니다.
+console.log(userName, userAge); // 출력: 김철수 25
+// getProperty(user, "height"); // ❌ 오류: User에 없는 키입니다.

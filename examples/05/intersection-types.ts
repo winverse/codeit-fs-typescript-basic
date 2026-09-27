@@ -77,7 +77,7 @@ const character: BattleCharacter = {
   },
 };
 
-console.log(product.name);
-console.log(review.content);
-character.attack();
-character.defend();
+console.log(product.name); // 출력: 코드잇 블랙 후드티
+console.log(review.content); // 출력: 아주 좋음
+character.attack(); // 출력: 공격!
+character.defend(); // 출력: 방어!

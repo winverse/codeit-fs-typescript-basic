@@ -5,7 +5,7 @@ const product = {
   price: 129_000,
 };
 
-product.price = "139000원"; // ❌ 오류
+product.price = "139000원"; // ❌ 오류: string을 number 자리에 넣을 수 없습니다
 
 const salePrice = product.price * 0.9;
 console.log(`할인 가격: ${salePrice}`);

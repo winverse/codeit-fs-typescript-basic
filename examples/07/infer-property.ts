@@ -1,5 +1,5 @@
 // examples/07/infer-property.ts
-type PropertyType<T, K extends PropertyKey> =
+type PropertyType<T, K extends keyof T> =
   T extends Record<K, infer V> ? V : never;
 
 interface User {

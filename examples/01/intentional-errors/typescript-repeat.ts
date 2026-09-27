@@ -5,5 +5,4 @@ function repeat(str: string, count: number) {
 }
 
 repeat(3, "hello");
-// ❌ Argument of type 'number' is not assignable to parameter of type 'string'
-// ❌ Argument of type 'string' is not assignable to parameter of type 'number'
+// ❌ 오류: Argument of type 'number' is not assignable to parameter of type 'string'

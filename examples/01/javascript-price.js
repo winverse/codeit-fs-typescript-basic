@@ -10,4 +10,4 @@ product.price = "129000원";
 
 // 나중에 할인 계산을 시도합니다
 const salePrice = product.price * 0.9;
-console.log(salePrice); // NaN
+console.log(salePrice); // 출력: NaN

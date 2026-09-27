@@ -38,12 +38,8 @@ const cases = [
     diagnostics: ["TS2339"],
   },
   {
-    name: "공유 타입 변경 누락",
-    files: [
-      "examples/01/intentional-errors/refactor/types.ts",
-      "examples/01/intentional-errors/refactor/a.ts",
-      "examples/01/intentional-errors/refactor/b.ts",
-    ],
+    name: "타입 변경 뒤 누락된 프로퍼티",
+    files: ["examples/01/intentional-errors/type-change.ts"],
     diagnostics: ["TS2741"],
   },
   {

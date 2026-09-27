@@ -6,5 +6,5 @@ const product = {
 };
 
 console.log(product.naem);
-//                   ^^^^
-// ❌ Property 'naem' does not exist on type '{ name: string; price: number; ... }'
+//                  ^^^^
+// ❌ 오류: Property 'naem' does not exist on type '{ name: string; price: number; membersOnly: boolean; }'

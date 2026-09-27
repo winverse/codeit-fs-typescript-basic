@@ -5,6 +5,7 @@ type AppEvent =
   | { type: "error"; message: string };
 
 type SuccessEvent = Extract<AppEvent, { type: "user" | "post" }>;
+// 결과: { type: "user"; userId: number } | { type: "post"; postId: number }
 
 const event: SuccessEvent = {
   type: "post",

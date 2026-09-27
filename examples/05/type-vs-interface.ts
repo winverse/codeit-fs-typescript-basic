@@ -51,5 +51,5 @@ const npc: Npc = {
 const current: Point = [0, 0];
 const target: Point = [4, 5];
 
-monster.move(current, target);
-console.log(npc.dialog);
+monster.move(current, target); // 출력: 오른쪽으로 4 위쪽으로 5 만큼 이동!
+console.log(npc.dialog); // 출력: 희귀 아이템을 보고 가세요.

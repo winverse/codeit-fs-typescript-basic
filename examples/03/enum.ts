@@ -14,7 +14,7 @@ function printSize(size: Size): void {
 }
 
 printSize(Size.L); // 출력: 사이즈: L
-// printSize('L');
+// printSize('L'); // ❌ 오류: 문자열 'L'은 Size 타입이 아닙니다
 
 enum Direction {
   Up = "UP",
@@ -29,7 +29,7 @@ function move(direction: Direction): void {
 
 move(Direction.Up); // 출력: 이동 방향: UP
 move(Direction.Left); // 출력: 이동 방향: LEFT
-// move('UP');
+// move('UP'); // ❌ 오류: 문자열 'UP'은 Direction 타입이 아닙니다
 
 enum NumericDirection {
   Up, // 0

@@ -13,4 +13,4 @@ const newProduct = {
   sizes: [90, 95, 100], // number[]
 };
 
-product = newProduct; // ❌ 오류
+product = newProduct; // ❌ 오류: sizes의 타입이 맞지 않습니다

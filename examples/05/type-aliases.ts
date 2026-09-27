@@ -40,4 +40,4 @@ function addToCartWithCallback(id: string, callback: AddToCartCallback): void {
 
 addToCartWithCallback("c001", (result) => {
   console.log(result ? "장바구니 담기 성공" : "재고 없음");
-});
+}); // 출력: 장바구니 담기 성공

@@ -23,7 +23,7 @@ function addToCart(id: string, quantity: number = 1): boolean {
 
 addToCart("c001", 2);
 addToCart("c001");
-// addToCart(123, 2);
+// addToCart(123, 2); // ❌ 오류: number를 string 자리에 넣을 수 없습니다
 
 function printCart(title?: string): void {
   if (title) {

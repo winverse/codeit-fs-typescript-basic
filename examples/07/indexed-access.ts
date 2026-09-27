@@ -17,4 +17,5 @@ const users: User[] = [
 ];
 
 console.log(findUserById(users, 1));
-// findUserById(users, "1"); // ❌ User["id"]는 number입니다.
+// 출력: { id: 1, name: '김철수', email: 'kim@email.com' }
+// findUserById(users, "1"); // ❌ 오류: User["id"]는 number입니다.

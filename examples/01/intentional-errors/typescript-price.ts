@@ -6,5 +6,4 @@ const product = {
 };
 
 product.price = "129000원";
-//              ^^^^^^^^^^
-// ❌ 에디터에서 빨간 줄: Type 'string' is not assignable to type 'number'
+// ❌ 오류: Type 'string' is not assignable to type 'number'

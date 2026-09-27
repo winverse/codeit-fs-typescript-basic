@@ -15,5 +15,5 @@ function hasOnlyStrings(value: unknown): boolean {
 
 if (hasOnlyStrings(parsedData)) {
   const sizes = parsedData as string[];
-  console.log(sizes.join(", "));
+  console.log(sizes.join(", ")); // 출력: S, M, L
 }

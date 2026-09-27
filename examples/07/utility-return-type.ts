@@ -12,8 +12,11 @@ async function fetchUser() {
 }
 
 type User = ReturnType<typeof getUser>;
+// 결과: { id: number; name: string; email: string }
 type UserPromise = ReturnType<typeof fetchUser>;
+// 결과: Promise<{ id: number; name: string; email: string }>
 type AsyncUser = Awaited<UserPromise>;
+// 결과: { id: number; name: string; email: string }
 
 const user: User = getUser();
 const asyncUser: AsyncUser = user;
