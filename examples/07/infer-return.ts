@@ -10,4 +10,6 @@ function sayHello(): string {
 }
 
 type AddResult = GetReturnType<typeof add>;
+// 결과: number
 type Greeting = GetReturnType<typeof sayHello>;
+// 결과: string

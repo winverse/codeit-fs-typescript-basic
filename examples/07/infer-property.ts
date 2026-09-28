@@ -9,4 +9,6 @@ interface User {
 }
 
 type IdType = PropertyType<User, "id">;
+// 결과: number
 type NameType = PropertyType<User, "name">;
+// 결과: string
