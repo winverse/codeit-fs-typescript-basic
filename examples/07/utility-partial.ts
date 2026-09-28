@@ -6,8 +6,7 @@ interface User {
   age: number;
 }
 
-// Partial<User>의 결과:
-// { id?: number; name?: string; email?: string; age?: number }
+// Partial<User>의 결과: { id?: number; name?: string; email?: string; age?: number }
 function updateUser(user: User, updates: Partial<User>): User {
   return { ...user, ...updates };
 }
