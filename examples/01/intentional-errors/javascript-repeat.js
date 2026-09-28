@@ -5,5 +5,5 @@ function repeat(str, count) {
 }
 
 repeat(3, "hello");
-// 실행 결과: TypeError: str.repeat is not a function
+// ❌ 오류: TypeError: str.repeat is not a function
 // 숫자 3에는 repeat() 메서드가 없어서 실행 중에 충돌합니다

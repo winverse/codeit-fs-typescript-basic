@@ -1,5 +1,5 @@
 // examples/07/infer-array.ts
-type ArrayElement<T> = T extends readonly (infer U)[] ? U : never;
+type ArrayElement<T> = T extends (infer U)[] ? U : never;
 
 const fruits = ["apple", "banana", "orange"];
 type Fruit = ArrayElement<typeof fruits>;
