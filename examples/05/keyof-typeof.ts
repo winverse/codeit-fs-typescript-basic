@@ -1,12 +1,5 @@
 // examples/05/keyof-typeof.ts
-interface Product {
-  id: string;
-  name: string;
-  price: number;
-  membersOnly?: boolean;
-}
-
-const product: Product = {
+const product = {
   id: "c001",
   name: "코드잇 블랙 후드 집업",
   price: 129_000,
@@ -34,6 +27,7 @@ const product2: typeof product = {
   id: "c002",
   name: "코드잇 텀블러",
   price: 25_000,
+  membersOnly: false,
 };
 
 const product3: ProductFromValue = {
@@ -44,4 +38,4 @@ const product3: ProductFromValue = {
 };
 
 console.log(product2, product3);
-// 출력: { id: 'c002', name: '코드잇 텀블러', price: 25000 } { id: 'c003', name: '코드잇 머그컵', price: 19000, membersOnly: false }
+// 출력: { id: 'c002', name: '코드잇 텀블러', price: 25000, membersOnly: false } { id: 'c003', name: '코드잇 머그컵', price: 19000, membersOnly: false }

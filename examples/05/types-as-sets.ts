@@ -3,13 +3,13 @@ type MediumSize = "M";
 type ClothingSize = "S" | "M" | "L";
 type ExtendedSize = ClothingSize | "FREE";
 
-type HasName = {
+interface HasName {
   name: string;
-};
+}
 
-type HasPrice = {
+interface HasPrice {
   price: number;
-};
+}
 
 type ProductPreview = HasName & HasPrice;
 

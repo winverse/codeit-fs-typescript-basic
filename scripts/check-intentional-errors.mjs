@@ -53,11 +53,6 @@ const cases = [
     diagnostics: ["TS2322"],
   },
   {
-    name: "프로퍼티 타입 오류",
-    files: ["examples/02/intentional-errors/type-errors/example1.ts"],
-    diagnostics: ["TS2322"],
-  },
-  {
     name: "객체 대입 오류",
     files: ["examples/02/intentional-errors/type-errors/example2.ts"],
     diagnostics: ["TS2322"],

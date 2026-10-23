@@ -1,5 +1,5 @@
 // examples/05/union-types.ts
-enum ClothingSize {
+enum Size {
   S = "S",
   M = "M",
   L = "L",
@@ -14,7 +14,7 @@ interface Product {
 }
 
 interface ClothingProduct extends Product {
-  sizes: ClothingSize[];
+  sizes: Size[];
   color: string;
 }
 
@@ -39,7 +39,7 @@ const product1: ClothingProduct = {
   name: "코드잇 블랙 후드 집업",
   price: 129_000,
   membersOnly: true,
-  sizes: [ClothingSize.M, ClothingSize.L],
+  sizes: [Size.M, Size.L],
   color: "black",
 };
 

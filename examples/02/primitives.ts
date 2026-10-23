@@ -8,7 +8,7 @@ let price: number = 129_000;
 let rate: number = 0.1;
 let stock: number = NaN;
 
-function applyDiscount(price: number): number {
+function applyDiscount(price: number) {
   if (Number.isNaN(price)) {
     return 0; // 비정상 입력 처리
   }
