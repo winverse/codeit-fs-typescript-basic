@@ -1,5 +1,4 @@
 // examples/02/unknown.ts
-// any는 타입 검사를 꺼 버립니다.
 const priceJson = '"129000원"';
 
 const unsafePrice: any = JSON.parse(priceJson);
