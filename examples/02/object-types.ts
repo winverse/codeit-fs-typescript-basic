@@ -39,6 +39,6 @@ const stock: { [id: string]: number } = {
 };
 
 stock["c004"] = 5; // OK
-// stock['c005'] = '없음'; // ❌ 오류: 값은 number여야 합니다
+// stock["c005"] = "없음"; // ❌ 오류: 값은 number여야 합니다
 
 console.log(stock["c001"], stock["c004"]); // 출력: 3 5

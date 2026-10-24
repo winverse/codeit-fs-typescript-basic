@@ -2,7 +2,7 @@
 let itemName: string = "코드잇 블랙 후드";
 let greet: string = `안녕하세요, ${itemName}`;
 
-// itemName = 42;  // ❌ 오류: number를 string 자리에 넣을 수 없습니다
+// itemName = 42; // ❌ 오류: number를 string 자리에 넣을 수 없습니다
 
 let price: number = 129_000;
 let rate: number = 0.1;

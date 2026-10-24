@@ -13,4 +13,4 @@ const selectedSize1 = "M";
 let selectedSize2 = "M";
 
 printSelectedSize(selectedSize1); // 출력: 선택한 사이즈: M
-// printSelectedSize(selectedSize2); // ❌ 오류: string은 'M'에 바로 넣을 수 없습니다
+// printSelectedSize(selectedSize2); // ❌ 오류: string은 "M"에 바로 넣을 수 없습니다
